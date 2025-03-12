@@ -250,6 +250,7 @@ case "$dist" in
     *buster*)   debian10_pkgs ;;
     *bullseye*) debian11_pkgs ;;
     *bookworm*) debian12_pkgs ;;
+    *noble*)    debian12_pkgs ;; # noble is actualy ubuntu 24.04 but the commands should be the same
     *CentOS* | *Scientific* ) 
         centos_version=$(centos_dist)
         if [ "$centos_version" == "7" ]; then
